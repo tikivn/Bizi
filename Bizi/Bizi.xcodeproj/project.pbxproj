@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEDB20FD24A57D4A00000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8727D78F24A57D4A00000000 /* AppDelegate.swift */; };
+		EEDB20FDCA89321E00000000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8727D78FCA89321E00000000 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B9F6FE1BCCE791700000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979D0F5312F3A54900000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C20A275BCCE791600000000;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8727D78F0A2B6EB600000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = Bizi/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		8727D78F2346D71800000000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Bizi/Sources/Resources/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8727D78F24A57D4A00000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Bizi/Sources/App/AppDelegate.swift; sourceTree = "<group>"; };
+		8727D78F3EBEF4B000000000 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; name = Info.plist; path = "tulsi-workspace/bazel-tulsi-includes/x/x/Bizi/Bizi-intermediates/Info.plist"; sourceTree = "<group>"; };
+		8727D78F46A60E2200000000 /* Bizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Bizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8727D78F5E91124200000000 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController.xib; path = Bizi/Sources/Resources/ViewController.xib; sourceTree = "<group>"; };
+		8727D78F866D5B2300000000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Bizi/Sources/Resources/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8727D78FB0B1548C00000000 /* _idx_BiziLib_9F60E64A_ios_min14.0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = _idx_BiziLib_9F60E64A_ios_min14.0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8727D78FC747DBE500000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Bizi/Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		8727D78FCA89321E00000000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Bizi/Sources/Scenes/ViewController.swift; sourceTree = "<group>"; };
+		8727D78FD0D9B3ED00000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = Bizi/Sources/Resources/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		88B3FC58002B400500000000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78F24A57D4A00000000 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		88B3FC5812F3A54900000000 /* Bizi */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78F0A2B6EB600000000 /* BUILD */,
+				88B3FC58F47D19AD00000000 /* Sources */,
+				88B3FC58FC51625800000000 /* Supporting Files */,
+			);
+			name = Bizi;
+			sourceTree = "<group>";
+		};
+		88B3FC5812F3A54900000001 /* Bizi */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC5852411EC900000000 /* Bizi-intermediates */,
+			);
+			name = Bizi;
+			sourceTree = "<group>";
+		};
+		88B3FC58316B0A5000000000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78FD0D9B3ED00000000 /* BUILD */,
+				13D7B84650BF685A00000000 /* LaunchScreen.storyboard */,
+				13D7B846A6E87B0A00000000 /* Main.storyboard */,
+				8727D78F5E91124200000000 /* ViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		88B3FC5852411EC900000000 /* Bizi-intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78F3EBEF4B000000000 /* Info.plist */,
+			);
+			name = "Bizi-intermediates";
+			sourceTree = "<group>";
+		};
+		88B3FC585B2955B900000000 /* bazel-tulsi-includes */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC585E0C3BD400000000 /* x */,
+			);
+			name = "bazel-tulsi-includes";
+			sourceTree = "<group>";
+		};
+		88B3FC585E0C3BD400000000 /* x */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC585E0C3BD400000001 /* x */,
+			);
+			name = x;
+			sourceTree = "<group>";
+		};
+		88B3FC585E0C3BD400000001 /* x */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC5812F3A54900000001 /* Bizi */,
+			);
+			name = x;
+			sourceTree = "<group>";
+		};
+		88B3FC586981D1AA00000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC5812F3A54900000000 /* Bizi */,
+				88B3FC58AFD997F400000000 /* Products */,
+			);
+			name = mainGroup;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		88B3FC586EA7641200000000 /* Indexer */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78FB0B1548C00000000 /* _idx_BiziLib_9F60E64A_ios_min14.0.framework */,
+			);
+			name = Indexer;
+			sourceTree = "<group>";
+		};
+		88B3FC58AFD997F400000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78F46A60E2200000000 /* Bizi.app */,
+				88B3FC586EA7641200000000 /* Indexer */,
+				88B3FC585B2955B900000000 /* bazel-tulsi-includes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B3FC58E2773A1200000000 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78FCA89321E00000000 /* ViewController.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		88B3FC58F47D19AD00000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				88B3FC58002B400500000000 /* App */,
+				88B3FC58316B0A5000000000 /* Resources */,
+				88B3FC58E2773A1200000000 /* Scenes */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		88B3FC58FC51625800000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8727D78FC747DBE500000000 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		6C20A275BCCE791600000000 /* _bazel_clean_ */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"/usr/local/bin/bazel\" \"bazel-bin\"";
+			buildConfigurationList = 62BBD460E20A0EA900000000 /* Build configuration list for PBXLegacyTarget "_bazel_clean_" */;
+			buildPhases = (
+			);
+			buildToolPath = "${PROJECT_FILE_PATH}/.tulsi/Scripts/bazel_clean.sh";
+			buildWorkingDirectory = "${SRCROOT}/..";
+			dependencies = (
+			);
+			name = _bazel_clean_;
+			passBuildSettingsInEnvironment = 1;
+			productName = _bazel_clean_;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		C9A51CE125E74A9200000000 /* Bizi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62BBD4603992B8B700000000 /* Build configuration list for PBXNativeTarget "Bizi" */;
+			buildPhases = (
+				0C242516A1E7B9FF00000000 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB56675EBCCE791700000000 /* PBXTargetDependency */,
+			);
+			name = Bizi;
+			productName = Bizi;
+			productReference = 8727D78F46A60E2200000000 /* Bizi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9A51CE1F64B3B3800000000 /* _idx_BiziLib_9F60E64A_ios_min14.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62BBD460D64AEB9100000000 /* Build configuration list for PBXNativeTarget "_idx_BiziLib_9F60E64A_ios_min14.0" */;
+			buildPhases = (
+				3C483EA50000000000000000 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB56675EBCCE791700000000 /* PBXTargetDependency */,
+			);
+			name = _idx_BiziLib_9F60E64A_ios_min14.0;
+			productName = _idx_BiziLib_9F60E64A_ios_min14.0;
+			productReference = 8727D78FB0B1548C00000000 /* _idx_BiziLib_9F60E64A_ios_min14.0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		979D0F5312F3A54900000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 62BBD4602E47F1ED00000000 /* Build configuration list for PBXProject "Bizi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 88B3FC586981D1AA00000000 /* mainGroup */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9A51CE125E74A9200000000 /* Bizi */,
+				6C20A275BCCE791600000000 /* _bazel_clean_ */,
+				C9A51CE1F64B3B3800000000 /* _idx_BiziLib_9F60E64A_ios_min14.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C242516A1E7B9FF00000000 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e\ncd \"${SRCROOT}/..\"\nexec \"${PROJECT_FILE_PATH}/.tulsi/Scripts/bazel_build.py\" //Bizi:Bizi --bazel \"/usr/local/bin/bazel\" --bazel_bin_path \"bazel-bin\" --verbose ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C483EA50000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				EEDB20FD24A57D4A00000000 /* AppDelegate.swift in Sources */,
+				EEDB20FDCA89321E00000000 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB56675EBCCE791700000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C20A275BCCE791600000000 /* _bazel_clean_ */;
+			targetProxy = 2B9F6FE1BCCE791700000000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13D7B84650BF685A00000000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8727D78F2346D71800000000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		13D7B846A6E87B0A00000000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8727D78F866D5B2300000000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88CC088D0DAA093B00000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TULSI_BWRS)",
+					"$(TULSI_WR)/bazel-bin",
+					"$(TULSI_WR)/bazel-genfiles",
+					"$(TULSI_BWRS)/bazel-tulsi-includes/x/x",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-workspace";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_PROJECT = Bizi;
+				TULSI_VERSION = 0.20210106.88;
+				TULSI_WR = "${SRCROOT}/..";
+			};
+			name = Debug;
+		};
+		88CC088D0DAA093B00000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//Bizi:Bizi";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.duytph.Bizi;
+				PRODUCT_NAME = Bizi;
+				SDKROOT = iphoneos;
+				TULSI_BUILD_PATH = Bizi;
+				TULSI_XCODE_VERSION = 12.3.0.12C33;
+			};
+			name = Debug;
+		};
+		88CC088D0DAA093B00000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_BWRS)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE -Osize -whole-module-optimization -swift-version 5";
+				PRODUCT_NAME = _idx_BiziLib_9F60E64A_ios_min14.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_BWRS)/bazel-tulsi-includes/x/x/Bizi";
+			};
+			name = Debug;
+		};
+		88CC088D44D807F400000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TULSI_BWRS)",
+					"$(TULSI_WR)/bazel-bin",
+					"$(TULSI_WR)/bazel-genfiles",
+					"$(TULSI_BWRS)/bazel-tulsi-includes/x/x",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-workspace";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_PROJECT = Bizi;
+				TULSI_VERSION = 0.20210106.88;
+				TULSI_WR = "${SRCROOT}/..";
+			};
+			name = Release;
+		};
+		88CC088D44D807F400000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//Bizi:Bizi";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.duytph.Bizi;
+				PRODUCT_NAME = Bizi;
+				SDKROOT = iphoneos;
+				TULSI_BUILD_PATH = Bizi;
+				TULSI_XCODE_VERSION = 12.3.0.12C33;
+			};
+			name = Release;
+		};
+		88CC088D44D807F400000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_BWRS)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE -Osize -whole-module-optimization -swift-version 5";
+				PRODUCT_NAME = _idx_BiziLib_9F60E64A_ios_min14.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_BWRS)/bazel-tulsi-includes/x/x/Bizi";
+			};
+			name = Release;
+		};
+		88CC088D6676FCA900000000 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				SWIFT_VERSION = 5;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-workspace";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_PROJECT = Bizi;
+				TULSI_VERSION = 0.20210106.88;
+				TULSI_WR = "${SRCROOT}/..";
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		88CC088D6676FCA900000001 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//Bizi:Bizi";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.duytph.Bizi;
+				PRODUCT_NAME = Bizi;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				TULSI_BUILD_PATH = Bizi;
+				TULSI_XCODE_VERSION = 12.3.0.12C33;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		88CC088DB86E2FBC00000000 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				SWIFT_VERSION = 5;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-workspace";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_PROJECT = Bizi;
+				TULSI_VERSION = 0.20210106.88;
+				TULSI_WR = "${SRCROOT}/..";
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		88CC088DB86E2FBC00000001 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//Bizi:Bizi";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.duytph.Bizi;
+				PRODUCT_NAME = Bizi;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				TULSI_BUILD_PATH = Bizi;
+				TULSI_XCODE_VERSION = 12.3.0.12C33;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8D1F0A3A25C142F400F9FEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = Debug;
+		};
+		8D1F0A3B25C142F400F9FEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = Release;
+		};
+		8D1F0A3C25C142F400F9FEFA /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8D1F0A3D25C142F400F9FEFA /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8D1F0A3E25C142F400F9FEFA /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_BiziLib_9F60E64A_ios_min14.0;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8D1F0A3F25C142F400F9FEFA /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_BiziLib_9F60E64A_ios_min14.0;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62BBD4602E47F1ED00000000 /* Build configuration list for PBXProject "Bizi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CC088D0DAA093B00000000 /* Debug */,
+				88CC088D44D807F400000000 /* Release */,
+				88CC088D6676FCA900000000 /* __TulsiTestRunner_Debug */,
+				88CC088DB86E2FBC00000000 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BBD4603992B8B700000000 /* Build configuration list for PBXNativeTarget "Bizi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CC088D0DAA093B00000001 /* Debug */,
+				88CC088D44D807F400000001 /* Release */,
+				88CC088D6676FCA900000001 /* __TulsiTestRunner_Debug */,
+				88CC088DB86E2FBC00000001 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BBD460D64AEB9100000000 /* Build configuration list for PBXNativeTarget "_idx_BiziLib_9F60E64A_ios_min14.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CC088D0DAA093B00000002 /* Debug */,
+				88CC088D44D807F400000002 /* Release */,
+				8D1F0A3E25C142F400F9FEFA /* __TulsiTestRunner_Debug */,
+				8D1F0A3F25C142F400F9FEFA /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BBD460E20A0EA900000000 /* Build configuration list for PBXLegacyTarget "_bazel_clean_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1F0A3A25C142F400F9FEFA /* Debug */,
+				8D1F0A3B25C142F400F9FEFA /* Release */,
+				8D1F0A3C25C142F400F9FEFA /* __TulsiTestRunner_Debug */,
+				8D1F0A3D25C142F400F9FEFA /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 979D0F5312F3A54900000000 /* Project object */;
+}

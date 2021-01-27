@@ -1,0 +1,21 @@
+{
+  "additionalFilePaths" : [
+    "Bizi/BUILD"
+  ],
+  "buildTargets" : [
+    "//Bizi:Bizi"
+  ],
+  "optionSet" : {
+
+  },
+  "projectName" : "Bizi",
+  "sourceFilters" : [
+    "Bizi",
+    "Bizi/Sources",
+    "Bizi/Sources/App",
+    "Bizi/Sources/Resources",
+    "Bizi/Sources/Resources/Base.lproj",
+    "Bizi/Sources/Scenes",
+    "Bizi/Supporting Files"
+  ]
+}
