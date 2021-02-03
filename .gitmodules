@@ -1,0 +1,3 @@
+[submodule "TKNavigator"]
+	path = TKNavigator
+	url = https://github.com/tikivn/TKNavigator.git
