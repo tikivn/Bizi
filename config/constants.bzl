@@ -4,7 +4,7 @@ This module contains shared constants among packages.
 
 SWIFT_VERSION = "5"
 
-MINIMUM_IOS_VERSION = "14.0"
+MINIMUM_IOS_VERSION = "9.0"
 
 PRODUCT_BUNDLE_IDENTIFIER_PREFIX = "dev.duytph"
 
