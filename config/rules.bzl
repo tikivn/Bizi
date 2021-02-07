@@ -1,5 +1,5 @@
 """
-This modules contains rules for building/testing an Apple application.
+This modules contains wrapper rules for building and testing an Apple platform application.
 """
 
 load(
@@ -27,6 +27,15 @@ def swift_unit_test(
         srcs = [],
         deps = [],
         visibility = ["//visibility:public"]):
+    """Builds and bundles an iOS Unit .xctest test bundle
+
+    Args:
+        name: base name of the target, the unit test bundle will be named as: name + "Tests".
+        srcs: source code of the test bundle.
+        deps: dependencies of the test bundle.
+        visibility: visibility of the test bundle.
+    """
+
     test_lib_name = name + "TestLib"
     host_application = ":" + name
     swift_library(
@@ -45,7 +54,7 @@ def swift_unit_test(
         visibility = visibility,
     )
 
-def first_party_library(
+def swift_first_party_library(
         name,
         deps = [],
         data = [],
@@ -53,6 +62,17 @@ def first_party_library(
         swift_compiler_flags = [],
         swift_version = SWIFT_VERSION,
         visibility = ["//visibility:public"]):
+    """Compiles and links Swift code into a static library and Swift module.
+
+    Args:
+        name: A unique name for the library.
+        deps: A list of targets that this library depends on, which will be linked into this library.
+        data: A list of files needed by this target at runtime.
+        test_deps: A list of targets that the unit test bundle of this library depends on, which will be linked into this library.
+        swift_compiler_flags: Additional compiler options.
+        swift_version: Swift version to build.
+        visibility: visibility of the test bundle.
+    """
     swift_unit_test(
         name = name,
         srcs = native.glob(["Tests/**/*.swift"]),
@@ -64,7 +84,9 @@ def first_party_library(
         module_name = name,
         srcs = native.glob(["Sources/**/*.swift"]),
         deps = deps,
-        copts = swift_compiler_flags + swift_library_compiler_flags() + ["-swift-version", swift_version],
+        copts = swift_compiler_flags +
+                swift_library_compiler_flags() +
+                ["-swift-version", swift_version],
         data = data,
         visibility = visibility,
     )
@@ -77,9 +99,26 @@ def application(
         app_icons = [],
         resources = [],
         swift_version = SWIFT_VERSION):
-    first_party_library(
+    """Builds and bundles an iOS application.
+
+    Args:
+        name: A unique name for this application.
+        infoplist: A list of .plist files that will be merged to form the Info.plist
+            that represents the application.
+            At least one file must be specified
+        deps: A list of dependencies targets to link into the binary.
+            Any resources, such as asset catalogs, that are referenced by those targets
+            will also be transitively included in the final application.
+        test_deps: A list of targets that the unit test bundle of this applicatipn depends on,
+            which will be linked into this library.
+        app_icons: Files that comprise the app icons for the application.
+            Each file must have a containing directory named *.xcassets/*.appiconset
+            and there may be only one such .appiconset directory in the list.
+        resources: A list of associated resource bundles or files that will be bundled into the final bundle
+        swift_version: Swift version to build.
+    """
+    swift_first_party_library(
         name = name + "Lib",
-        data = [],
         deps = deps,
         test_deps = test_deps,
         swift_version = swift_version,
@@ -90,10 +129,11 @@ def application(
         bundle_id = PRODUCT_BUNDLE_IDENTIFIER_PREFIX + "." + name,
         families = [
             "iphone",
+            "ipad",
         ],
         app_icons = app_icons,
-        resources = resources,
         infoplists = [infoplist],
         minimum_os_version = MINIMUM_IOS_VERSION,
+        resources = resources,
         deps = deps + [":" + name + "Lib"],
     )
