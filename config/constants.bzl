@@ -1,5 +1,5 @@
 """
-This module contains shared constants among packages.
+This module contains shared constants.
 """
 
 SWIFT_VERSION = "5"

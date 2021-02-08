@@ -1,5 +1,5 @@
 """
-This module contains configurations for building/testing Apple platforms applications.
+This module contains functions to select building artifacts associated with an environment.
 """
 
 load(
@@ -9,6 +9,8 @@ load(
 )
 
 def swift_library_compiler_flags():
+    """Return Swift compiler flags associated with an environment
+    """
     return select({
         "//config:develop": SWIFT_DEBUG_COMPILER_FLAGS,
         "//config:staging": SWIFT_DEBUG_COMPILER_FLAGS,

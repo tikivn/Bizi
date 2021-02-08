@@ -1,5 +1,5 @@
 """
-This modules contains wrapper rules for building and testing an Apple platform application.
+This module contains wrapper rules for building and testing an iOS platform application.
 """
 
 load(
@@ -22,21 +22,23 @@ load(
     "SWIFT_VERSION",
 )
 
-def swift_unit_test(
+def tk_ios_unit_test(
         name,
         srcs = [],
         deps = [],
         visibility = ["//visibility:public"]):
-    """Builds and bundles an iOS Unit .xctest test bundle
+    """Builds and bundles an iOS Unit .xctest test bundle.
 
     Args:
-        name: base name of the target, the unit test bundle will be named as: name + "Tests".
-        srcs: source code of the test bundle.
-        deps: dependencies of the test bundle.
-        visibility: visibility of the test bundle.
+        name: A unique base name for this uni test bundle.
+        srcs: A list of targets that contains the source code of the unit test bundle.
+        deps: A list of targets that the unit test bundle depends on,
+            which will be linked into this library.
+        visibility: The visibility attribute on a target controls
+            whether the target can be used in other packages.
     """
 
-    test_lib_name = name + "TestLib"
+    test_lib_name = name + "Tests-Lib"
     host_application = ":" + name
     swift_library(
         name = test_lib_name,
@@ -54,7 +56,7 @@ def swift_unit_test(
         visibility = visibility,
     )
 
-def swift_first_party_library(
+def tk_swift_library(
         name,
         deps = [],
         data = [],
@@ -71,9 +73,9 @@ def swift_first_party_library(
         test_deps: A list of targets that the unit test bundle of this library depends on, which will be linked into this library.
         swift_compiler_flags: Additional compiler options.
         swift_version: Swift version to build.
-        visibility: visibility of the test bundle.
+        visibility: The visibility attribute on a target controls whether the target can be used in other packages.
     """
-    swift_unit_test(
+    tk_ios_unit_test(
         name = name,
         srcs = native.glob(["Tests/**/*.swift"]),
         deps = test_deps,
@@ -91,7 +93,7 @@ def swift_first_party_library(
         visibility = visibility,
     )
 
-def application(
+def tk_ios_application(
         name,
         infoplist,
         deps = [],
@@ -117,7 +119,7 @@ def application(
         resources: A list of associated resource bundles or files that will be bundled into the final bundle
         swift_version: Swift version to build.
     """
-    swift_first_party_library(
+    tk_swift_library(
         name = name + "Lib",
         deps = deps,
         test_deps = test_deps,
